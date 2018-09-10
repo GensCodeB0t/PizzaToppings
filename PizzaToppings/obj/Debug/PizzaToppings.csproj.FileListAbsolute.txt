@@ -1,0 +1,15 @@
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\bin\Debug\PizzaToppings.exe.config
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\bin\Debug\PizzaToppings.exe
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\bin\Debug\PizzaToppings.pdb
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\MainWindow.g.cs
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\App.g.cs
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings_MarkupCompile.cache
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings_MarkupCompile.lref
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\MainWindow.baml
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.g.resources
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.Properties.Resources.resources
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.exe
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.pdb
+C:\Users\Ryan\Documents\GitHub\C#\PizzaToppings\PizzaToppings\obj\Debug\PizzaToppings.csprojResolveAssemblyReference.cache

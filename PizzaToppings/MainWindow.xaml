@@ -1,0 +1,81 @@
+﻿
+<Window x:Class="PizzaToppings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaToppings"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        FontFamily="Arial Narrow">
+
+    <Window.Resources>
+        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}" x:Key="MyDataGridHeaderStyle">
+            <Style.Setters>
+                <Setter Property="Margin" Value="0,0,10,0"/>
+                <Setter Property="TextBlock.TextAlignment" Value="Right" />
+            </Style.Setters>
+        </Style>
+        <Style BasedOn="{StaticResource {x:Type DataGridCell}}" TargetType="{x:Type DataGridCell}" x:Key="MyDataGridCellStyle">
+            <Style.Setters>
+                <Setter Property="TextBlock.TextAlignment" Value="Right" />
+            </Style.Setters>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <Border DockPanel.Dock="Top" Height="40" Background="DarkRed">
+            <Label Content="MOST REQUESTED PIZZA TOPPINGS" FontFamily="Arial Narrow" FontSize="24"/>
+        </Border>
+        <Border>
+            <Grid ShowGridLines="False" RenderTransformOrigin="0.329,0.486">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125*" />
+                    <ColumnDefinition Width="392*" />
+                </Grid.ColumnDefinitions>
+
+
+                <DockPanel Grid.Column="0"  >
+                    <Border Background="Black" Height="60" DockPanel.Dock="Bottom">
+                        <Button Name="EXIT" Background="Black" Foreground="White" Content="EXIT" FontFamily="Arial Narrow" FontSize="16" Click="EXIT_Click" BorderThickness="0"/>
+                    </Border>
+                    <Border Background="Black" Height="60" DockPanel.Dock="Bottom">
+                        <Button Name="Refresh" Background="Black" Foreground="White" Content="REFRESH" FontFamily="Arial Narrow" FontSize="16" Click="Refresh_Click" BorderThickness="0"/>
+                    </Border>
+                    <Border Background="Black" />
+                </DockPanel>
+
+                <DockPanel Grid.Column="1"  >
+                    <Border Background="White" >
+                        <DataGrid Name="dgToppings"                         
+                            AutoGenerateColumns="False"
+                            ItemsSource="{Binding pizza.Toppings}" 
+                                  IsReadOnly="True" 
+                                  CanUserReorderColumns="False" 
+                                  CanUserSortColumns="False" 
+                                  BorderThickness="0">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Number&#x0a;Requested"
+                                                    Binding="{Binding Value}" 
+                                                    Width="Auto" 
+                                                    HeaderStyle="{StaticResource MyDataGridHeaderStyle}" 
+                                                    CellStyle="{StaticResource MyDataGridCellStyle}" />
+
+
+                                <DataGridTextColumn Header="Topping" 
+                                                    Binding="{Binding Key}" 
+                                                    Width="*"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Border>
+                </DockPanel>
+
+
+            </Grid>
+        </Border>
+    </DockPanel>
+    
+    
+    
+</Window>
